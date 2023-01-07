@@ -1,0 +1,108 @@
+@import "style.css";
+@import "./font/fontFamily/fonts.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.section-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+}
+
+.toast-success {
+  background: url("/src/assets/icons/toast-success.svg") !important;
+  background-size: 100% 100% !important;
+  height: 40px !important;
+  width: 40px !important;
+}
+.Vue-Toastification__toast-body {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #363130;
+  display: flex;
+  align-items: center;
+  
+}
+.Vue-Toastification__toast {
+  padding: 8px 4px !important;
+  box-shadow: 0 10px 28px rgba(38, 55, 91, 0.06) !important;
+  border-radius: 12px !important;
+}
+
+@media (max-width: 768px) {
+  .Vue-Toastification__toast {
+    max-width: 360px !important;
+  }
+}
+
+.Vue-Toastification__toast--success {
+  background: #e5feea !important;
+  border-radius: 16px !important;
+  box-shadow: 0 10px 28px rgba(38, 55, 91, 0.06) !important;
+  display: flex !important;
+  width: 376px !important;
+  max-width: 100%;
+  height: 56px !important;
+  justify-content: space-between !important;
+  border: 2px solid #b1e5bb !important;
+}
+.Vue-Toastification__toast--success .Vue-Toastification__icon path {
+  color: #fff !important;
+  fill: #fff !important;
+  background: #fff !important;
+}
+/*! Toastification success !*/
+/*! Toastification error !*/
+
+.Vue-Toastification__close-button {
+  color: #999999 !important;
+  font-size: 30px !important;
+  margin-right: 10px !important;
+  opacity: 1 !important;
+}
+
+.Vue-Toastification__toast--error {
+  background: #fcecec !important;
+  border: 2px solid #ffd6d6 !important;
+  box-shadow: 0 10px 28px rgba(38, 55, 91, 0.06) !important;
+  border-radius: 16px;
+  display: flex !important;
+  max-width: 100%;
+  height: 56px !important;
+  justify-content: space-between;
+  width: 350px !important;
+  top: 10px !important;
+  left: 10px !important;
+}
+
+.Vue-Toastification__icon {
+  margin: 0 8px !important;
+}
+
+.toast-error {
+  background: url("/src/assets/icons/toast-error.svg") !important;
+  background-size: 100% 100% !important;
+  height: 40px !important;
+  width: 40px !important;
+}
+/*! Toastification error !*/
+.container {
+  @apply mx-auto px-4;
+}
